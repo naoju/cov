@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>疫情数据可视化</title>
+        <script src="../static/js/jquery-1.11.1.min.js"></script>
+        <script src="../static/js/echarts.min.js"></script>
+		<script src="../static/js/china.js"></script>
+        <script src="../static/js/worldcloud.js"></script>
+        <link href="../static/css/main.css" rel="stylesheet"/>
+	</head>
+	<body>
+    <script src="../static/js/flexible.js"></script>
+		<div id="gyroContain">
+            <header>
+                <h1>全国疫情数据可视化面板</h1>
+            </header>
+            <div class="main" ><a href="index">全球疫情</a></div>
+
+            <div id="download">
+{#                <a>数据下载</a>#}
+                <a class = "txt" href="../download/history.xlsx" download="history.xlsx">累计病例</a>
+                <a class = "txt" href="../download/details.xlsx" download="details.xlsx">当前病例</a>
+                <a class = "txt" href="../download/hotsearch.xlsx" download="hotsearch.xlsx">热搜记录</a>
+            </div>
+
+            <div id="nowtime"></div>
+			<div id="tim">实时时间</div>
+            <div id="l1">左1模块</div>
+			<div id="l2">左2模块</div>
+			<div id="c1">
+				<div class="num"><h1></h1></div>
+				<div class="num"><h1></h1></div>
+				<div class="num"><h1></h1></div>
+				<div class="num"><h1></h1></div>
+				<div class="txt"><h2>确诊累计</h2></div>
+				<div class="txt"><h2>剩余疑似</h2></div>
+				<div class="txt"><h2>治愈累计</h2></div>
+				<div class="txt"><h2>死亡累计</h2></div>
+			</div>
+			<div id="c2">中2模块</div>
+			<div id="r1">右1模块</div>
+			<div id="r2">右2模块</div>
+			<script src="../static/js/ec_center.js"></script>
+			<script src="../static/js/ec_left1.js"></script>
+			<script src="../static/js/ec_left2.js"></script>
+			<script src="../static/js/ec_right1.js"> </script>
+			<script src="../static/js/ec_right2.js"></script>
+			<script src="../static/js/controller.js"> </script>
+		</div>
+
+	</body>
+</html>
+
